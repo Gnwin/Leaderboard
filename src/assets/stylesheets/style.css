@@ -1,0 +1,45 @@
+/*** Project Meta ***/
+
+/* general - line 13 */
+
+/* header - line 39 */
+
+/* main content - line 19 */
+
+/* footer - line 144 */
+
+/** GENERAL **/
+
+:root {
+  /* --border-bottom: 1px solid rgb(230, 230, 230);
+  --grey: rgb(246, 246, 246);
+  --flex: flex; */
+}
+
+/* Mobile View */
+
+.html {
+  font-size: 87.5%;
+  scroll-behavior: smooth;
+}
+
+.body {
+  position: relative;
+}
+
+.offscreen {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/** header **/
+
+/* Main Content */
+
+/* Footer */
