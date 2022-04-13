@@ -1,0 +1,147 @@
+/*** Project Meta ***/
+
+/* general - line 13 */
+
+/* header - line 39 */
+
+/* main content - line 19 */
+
+/* footer - line 144 */
+
+/** GENERAL **/
+
+/* @font-face {
+  font-family: 'MyFont';
+  src: url('./my-font.woff2') format('woff2'),
+    url('./my-font.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+} */
+
+:root {
+  --border-bottom: 1px solid rgb(230, 230, 230);
+  --grey: rgb(246, 246, 246);
+  --flex: flex;
+}
+
+/* Mobile View */
+
+.html {
+  font-size: 87.5%;
+  scroll-behavior: smooth;
+}
+
+.body {
+  position: relative;
+}
+
+.offscreen {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/** header **/
+
+/* Main Content */
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.leadermain {
+  width: 100%;
+}
+
+.title {
+  font-size: 4rem;
+  padding: 2rem 0 2rem 1rem;
+}
+
+.leaderboard {
+  display: var(--flex);
+  width: 100%;
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.board,
+.addscore-form {
+  width: 50%;
+  padding: 2rem;
+}
+
+.recentscores {
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+.refresh {
+  font-size: 1.5rem;
+  float: right;
+  padding: 0.1rem 0.5rem;
+  border: 2px solid black;
+  margin-top: 0.1rem;
+}
+
+.recentscores::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.scores {
+  border: 2px solid black;
+}
+
+.score {
+  padding: 0.5rem;
+}
+
+.score:nth-of-type(even) {
+  background-color: grey;
+}
+
+.add {
+  font-size: 2rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.yourname,
+.yourscore {
+  margin-bottom: 2rem;
+}
+
+/* .yourscore {} */
+
+.submit {
+  display: block;
+  padding: 0.1rem 0.5rem;
+  border: 2px solid black;
+  float: right;
+  font-size: 1.5rem;
+}
+
+.submit::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+/* Footer */
