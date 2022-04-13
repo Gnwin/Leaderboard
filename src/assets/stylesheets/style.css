@@ -100,11 +100,14 @@
 
 .scores {
   border: 2px solid black;
-  /* font-size: ; */
 }
 
 .score {
   padding: 0.5rem;
+}
+    
+.score:nth-of-type(even) {
+  background-color: grey;
 }
 
 .add {
