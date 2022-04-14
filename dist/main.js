@@ -136,7 +136,37 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stylesheets_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../stylesheets/reset.css */ \"./src/assets/stylesheets/reset.css\");\n/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n\n\n// import Icon from './images/icon.png';\n\n//# sourceURL=webpack://leaderboard/./src/assets/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _stylesheets_reset_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../stylesheets/reset.css */ \"./src/assets/stylesheets/reset.css\");\n/* harmony import */ var _stylesheets_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../stylesheets/style.css */ \"./src/assets/stylesheets/style.css\");\n/* harmony import */ var _modules_Games__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/Games */ \"./src/assets/js/modules/Games.js\");\n/* harmony import */ var _modules_Displaygames__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/Displaygames */ \"./src/assets/js/modules/Displaygames.js\");\n\n\n// import Newgame from './modules/Newgame';\n\n\n// import Icon from './images/icon.png';\n\n\nasync function getGames() {\n  const response = await fetch(\n    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/`\n  );\n  const data = await response.json();\n\n  if (!response.ok) {\n    throw new Error(response.statusText);\n  }\n\n  return data;\n}\n\ndocument.addEventListener('DOMContentLoaded', async () =>{\n  let data = await getGames();\n  // const result = data[0];\n  // console.log(result);\n  data.result.splice(20, 2031);\n  _modules_Games__WEBPACK_IMPORTED_MODULE_2__[\"default\"].games = data.result;\n\n  console.log(_modules_Games__WEBPACK_IMPORTED_MODULE_2__[\"default\"].games);\n  _modules_Displaygames__WEBPACK_IMPORTED_MODULE_3__[\"default\"].gamedata(_modules_Games__WEBPACK_IMPORTED_MODULE_2__[\"default\"].games);\n\n})\n\n// fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/')\n// .then(res => res.json())\n// .then(data => {\n  // console.log(JSON.parse(data.result));\n  // data = JSON.parse(data.result);\n  // console.log(Object.values(data));\n  // for (let i=0; i<data.length; i++) {\n  //   let post = data[i];\n  //   let img = document.createElement('img');\n  //   img.src = post.parsely.meta.image.url;\n  //   posts.appendChild(img);\n  //   console.log(post.parsely.meta.image.url);\n  // }\n// })\n\n// const b = JSON.parse(localStorage.getItem('todos'))\n\n// export default gameslist.games;\n\n\n\n\n\n//# sourceURL=webpack://leaderboard/./src/assets/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/modules/Displaygames.js":
+/*!***********************************************!*\
+  !*** ./src/assets/js/modules/Displaygames.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _gamehtml__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./gamehtml */ \"./src/assets/js/modules/gamehtml.js\");\n\n// import Newgame from './modules/Newgame';\n\n// async function getGames() {\n//   const response = await fetch(\n//     `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Zl4d7IVkemOTTVg2fUdz/scores/`\n//   );\n//   const data = await response.json();\n\n//   if (!response.ok) {\n//     throw new Error(response.statusText);\n//   }\n\n//   return data;\n// }\n\n// document.addEventListener('DOMContentLoaded', async () =>{\n//   const data = await getGames();\n//   // const result = data[0];\n//   // console.log(result);\n//   gameslist.games = data.result;\n//   console.log(gameslist.games);\n  \n\n// })\n\nclass Displaygames {\n  constructor() {\n\n  }\n\n  gamedata = (data) => {\n    const scorelist = document.querySelector('.scores');\n    let markup = '';\n    data.forEach(element => {\n      const gameitem = (0,_gamehtml__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(element.user, element.score);\n      markup += gameitem;\n    });\n    scorelist.innerHTML = markup;\n  }\n}\n\nconst display = new Displaygames();\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (display);\n\n//# sourceURL=webpack://leaderboard/./src/assets/js/modules/Displaygames.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/modules/Games.js":
+/*!****************************************!*\
+  !*** ./src/assets/js/modules/Games.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\nclass Games {\n  constructor(games) {\n    this.games = games;\n  }\n}\n\n// const gameslist = new Games([]);\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Games);\n\n//# sourceURL=webpack://leaderboard/./src/assets/js/modules/Games.js?");
+
+/***/ }),
+
+/***/ "./src/assets/js/modules/gamehtml.js":
+/*!*******************************************!*\
+  !*** ./src/assets/js/modules/gamehtml.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst game = (name, score) => `<div class=\"score\">${name}: ${score}</div>`;\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (game);\n\n//# sourceURL=webpack://leaderboard/./src/assets/js/modules/gamehtml.js?");
 
 /***/ })
 
