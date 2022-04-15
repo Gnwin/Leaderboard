@@ -51,7 +51,7 @@
 /* Main Content */
 
 .main {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   align-items: center;
 }
@@ -142,6 +142,22 @@
   width: 100%;
   border: 2px solid black;
   padding: 0.5rem;
+}
+
+.loading {
+  padding: 5rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.error {
+  padding: 5rem 0;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.message {
+  padding: 2rem 0;
 }
 
 /* Footer */
