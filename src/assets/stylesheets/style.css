@@ -111,10 +111,12 @@
   border: 2px solid black;
   border-radius: var(--border-radius);
   background-color: plum;
+  color: black;
 }
 
 .score {
   padding: 0.5rem;
+  border-radius: 8px;
 }
 
 .score:nth-of-type(even) {
