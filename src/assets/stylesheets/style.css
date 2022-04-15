@@ -30,6 +30,7 @@
 .html {
   font-size: 87.5%;
   scroll-behavior: smooth;
+  background-color: darkolivegreen;
 }
 
 .body {
@@ -52,9 +53,10 @@
 /* Main Content */
 
 .main {
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   align-items: center;
+  background-color: rosybrown;
 }
 
 .leadermain {
@@ -64,6 +66,7 @@
 .title {
   font-size: 4rem;
   padding: 2rem 0 2rem 1rem;
+  color: azure;
 }
 
 .leaderboard {
@@ -72,6 +75,7 @@
   width: 80%;
   max-width: 900px;
   margin: auto;
+  color: white;
 }
 
 .board,
@@ -171,6 +175,7 @@
 
 .message {
   padding: 2rem 0;
+  color: white;
 }
 
 /* Footer */
