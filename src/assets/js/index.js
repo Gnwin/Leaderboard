@@ -6,7 +6,6 @@ import grabinput from './modules/GrabUserInput.js';
 import fetchdata from './modules/fetchdata.js';
 import load from './modules/loader.js';
 import createGame from './modules/CreateGame.js';
-// import Icon from './images/icon.png';
 
 if (gameslist.games.length === 0) {
   const scorelist = document.querySelector('.scores');
