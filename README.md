@@ -6,9 +6,9 @@ A JavaScript project for the Leaderboard list app, using webpack and ES6 feature
 
 <img src="./src/assets/images/Screenshot 2022-04-15 at 4.14.54 PM.png">
 
-<!-- ## Live Preview
+## Live Preview
 
-- Live preview: [click here](https://gnwin.github.io/Leaderboard/) -->
+- Live preview: [click here](https://gnwin.github.io/Leaderboard/)
 
 ## Built With
 
