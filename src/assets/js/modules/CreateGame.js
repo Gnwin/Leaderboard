@@ -12,14 +12,14 @@ function createGame() {
       'Content-type': 'application/json; charset=UTF-8',
     },
   })
-  .then((response) => response.json())
-  .then((json) => {
-    const splittedResult = json.result.split(' ');
-    const [id] = [splittedResult[3]];
-    const scores = document.querySelector('.scores');
-    scores.setAttribute('id', id);
-    return id;
-  });
+    .then((response) => response.json())
+    .then((json) => {
+      const splittedResult = json.result.split(' ');
+      const [id] = [splittedResult[3]];
+      const scores = document.querySelector('.scores');
+      scores.setAttribute('id', id);
+      return id;
+    });
 }
 
 export default createGame;

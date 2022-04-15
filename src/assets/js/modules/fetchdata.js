@@ -3,7 +3,7 @@ import display from './Displaygames.js';
 
 async function getGames(id) {
   const response = await fetch(
-    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores`
+    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores`,
   );
   const data = await response.json();
   if (!response.ok) {
