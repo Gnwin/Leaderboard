@@ -1,7 +1,5 @@
 import gameslist from './Games';
 import display from './Displaygames';
-import error from './error';
-
 
 async function getGames(id) {
   const response = await fetch(

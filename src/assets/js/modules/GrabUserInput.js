@@ -15,6 +15,7 @@ class GrabUserInput {
     const game = new Newgame(name.value, score.value);
     name.value = '';
     score.value = '';
+
     fetch(`${api}/${id}/scores`, {
       method: 'POST',
       body: JSON.stringify(game),
@@ -22,11 +23,7 @@ class GrabUserInput {
         'Content-type': 'application/json; charset=UTF-8',
       },
     })
-    .then((response) => response.json())
-    .then((json) => {
-      // console.log(json);
-    });
-
+    .then((response) => response.json());
   }
 
   refresh = (e, id) => {
@@ -36,5 +33,4 @@ class GrabUserInput {
 }
 
 const grabinput = new GrabUserInput();
-export default grabinput
-
+export default grabinput;

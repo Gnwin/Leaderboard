@@ -28,6 +28,3 @@ createGame().then((uniqueid) => {
   };
   btn.addEventListener('click', makeHandler(uniqueid));
 });
-
-
-

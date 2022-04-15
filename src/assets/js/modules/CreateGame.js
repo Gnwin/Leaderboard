@@ -21,7 +21,6 @@ function createGame() {
     scores.setAttribute("id", id);
     return id;
   })
-
 }
 
 export default createGame;
