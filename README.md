@@ -4,7 +4,7 @@ A JavaScript project for the Leaderboard list app, using webpack and ES6 feature
 
 ## Screenshot
 
-<img src="./src/assets/images/Screenshot 2022-04-15 at 4.14.54 PM.png>
+<img src="./src/assets/images/Screenshot 2022-04-15 at 4.14.54 PM.png">
 
 ## Built With
 
