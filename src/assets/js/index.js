@@ -1,11 +1,11 @@
 import '../stylesheets/reset.css';
 import '../stylesheets/style.css';
 
-import gameslist from './modules/Games';
-import grabinput from './modules/GrabUserInput';
-import fetchdata from './modules/fetchdata';
-import load from './modules/loader'
-import createGame from './modules/CreateGame';
+import gameslist from './modules/Games.js';
+import grabinput from './modules/GrabUserInput.js';
+import fetchdata from './modules/fetchdata.js';
+import load from './modules/loader.js';
+import createGame from './modules/CreateGame.js';
 // import Icon from './images/icon.png';
 
 if (gameslist.games.length === 0) {
@@ -21,7 +21,7 @@ createGame().then((uniqueid) => {
   const makeHandler1 = (id) => (event) => {
     grabinput.refresh(event, id);
   };
-  refresh.addEventListener('click', makeHandler1(uniqueid)); 
+  refresh.addEventListener('click', makeHandler1(uniqueid));
 
   const makeHandler = (id) => (event) => {
     grabinput.creategame(event, id);

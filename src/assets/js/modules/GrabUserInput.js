@@ -1,6 +1,6 @@
-import fetchdata from './fetchdata';
-import api from './Api';
-import Newgame from './Newgame';
+import fetchdata from './fetchdata.js';
+import api from './Api.js';
+import Newgame from './Newgame.js';
 
 class GrabUserInput {
   creategame = (e, id) => {

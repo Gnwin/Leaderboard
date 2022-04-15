@@ -1,5 +1,5 @@
-import gameslist from './Games';
-import display from './Displaygames';
+import gameslist from './Games.js';
+import display from './Displaygames.js';
 
 async function getGames(id) {
   const response = await fetch(
@@ -13,9 +13,9 @@ async function getGames(id) {
 }
 
 const fetchdata = async (gameid) => {
-  let data = await getGames(gameid);
+  const data = await getGames(gameid);
   gameslist.games = data.result;
   display.gamedata(gameslist.games);
-}
+};
 
 export default fetchdata;
