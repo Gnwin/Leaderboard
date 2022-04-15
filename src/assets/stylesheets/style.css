@@ -22,6 +22,7 @@
   --border-bottom: 1px solid rgb(230, 230, 230);
   --grey: rgb(246, 246, 246);
   --flex: flex;
+  --border-radius: 10px;
 }
 
 /* Mobile View */
@@ -90,6 +91,10 @@
   padding: 0.1rem 0.5rem;
   border: 2px solid black;
   margin-top: 0.1rem;
+  border-radius: var(--border-radius);
+  background-color: green;
+  color: white;
+  border-color: green;
 }
 
 .recentscores::after {
@@ -100,6 +105,8 @@
 
 .scores {
   border: 2px solid black;
+  border-radius: var(--border-radius);
+  background-color: plum;
 }
 
 .score {
@@ -107,7 +114,7 @@
 }
 
 .score:nth-of-type(even) {
-  background-color: grey;
+  background-color: rgb(172, 175, 183);
 }
 
 .add {
@@ -119,6 +126,7 @@
 .yourname,
 .yourscore {
   margin-bottom: 2rem;
+  background-color:burlywood;
 }
 
 /* .yourscore {} */
@@ -129,6 +137,10 @@
   border: 2px solid black;
   float: right;
   font-size: 1.5rem;
+  border-radius: var(--border-radius);
+  background-color: blue;
+  color: white;
+  border-color: blue;
 }
 
 .submit::after {
@@ -142,6 +154,7 @@
   width: 100%;
   border: 2px solid black;
   padding: 0.5rem;
+  border-radius: 5px;
 }
 
 .loading {
