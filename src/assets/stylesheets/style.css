@@ -56,7 +56,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: rosybrown;
+  background-color: rgb(23, 12, 83);
 }
 
 .leadermain {
@@ -98,7 +98,7 @@
   border-radius: var(--border-radius);
   background-color: green;
   color: white;
-  border-color: green;
+  border-color: rgb(9, 109, 9);
 }
 
 .recentscores::after {
@@ -110,8 +110,8 @@
 .scores {
   border: 2px solid black;
   border-radius: var(--border-radius);
-  background-color: plum;
   color: black;
+  background-color: #fff;
 }
 
 .score {
@@ -132,7 +132,7 @@
 .yourname,
 .yourscore {
   margin-bottom: 2rem;
-  background-color:burlywood;
+  background-color: rgb(196, 194, 191);
 }
 
 /* .yourscore {} */
