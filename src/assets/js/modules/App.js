@@ -39,6 +39,6 @@ const runApp = () => {
     fetchAndDisplaydata(leaderBoard.id);
     activateButtons(leaderBoard.id);
   }
-}
+};
 
 export default runApp;
