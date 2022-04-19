@@ -1,4 +1,4 @@
-import fetchdata from './fetchdata.js';
+import fetchdata from './fetchAndDisplaydata.js';
 import api from './Api.js';
 import Newgame from './Newgame.js';
 
