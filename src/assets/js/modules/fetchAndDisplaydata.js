@@ -12,10 +12,10 @@ async function getGames(id) {
   return data;
 }
 
-const fetchdata = async (gameid) => {
+const fetchAndDisplaydata = async (gameid) => {
   const data = await getGames(gameid);
   gameslist.games = data.result;
   display.gamedata(gameslist.games);
 };
 
-export default fetchdata;
+export default fetchAndDisplaydata;
