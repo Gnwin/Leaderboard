@@ -22,7 +22,7 @@ A JavaScript project for the Leaderboard list app, using webpack and ES6 feature
 To get a local copy up and running follow this simple step:
 
 - Clone repository to your local machine: `https://github.com/Gnwin/Leaderboard.git`
-- Run `git checkout develop` to switch to 'feature/final-touches' branch
+- Run `git checkout develop` to switch to 'develop' branch
 - Run `npm install` to install dependencies
 - Run `npm start` to start the server
 
