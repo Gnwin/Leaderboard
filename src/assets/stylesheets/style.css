@@ -112,6 +112,8 @@
   border-radius: var(--border-radius);
   color: black;
   background-color: #fff;
+  overflow: scroll;
+  max-height: 10rem;
 }
 
 .score {
